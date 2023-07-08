@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/prj/task_2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/src/custom_ram.v,1688823152,verilog,,C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/src/siso_decoder.v,,custom_ram,,,../../../../../tb/verification,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/src/siso_decoder.v,1688819776,verilog,,,,siso_decoder,,,../../../../../tb/verification,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/BaseTest.svh,1688819174,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Driver.svh,1688822498,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Environment.svh,1688817187,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Monitor.svh,1688822571,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/OutData.svh,1688822790,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Scoreboard.svh,1688827283,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Test512.svh,1688818482,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Test6144.svh,1688818537,verilog,,,,,,,,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/dut_if.sv,1688819109,systemVerilog,,C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb_pckg.sv,,dut_if,,,../../../../../tb/verification,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb.sv,1688818614,systemVerilog,,,,tb,,,../../../../../tb/verification,,,,,
+C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb_pckg.sv,1688818577,systemVerilog,C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb.sv,C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb.sv,C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Driver.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/OutData.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Monitor.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Scoreboard.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Environment.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/BaseTest.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Test512.svh;C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/Test6144.svh,tb_pckg,,,../../../../../tb/verification,,,,,

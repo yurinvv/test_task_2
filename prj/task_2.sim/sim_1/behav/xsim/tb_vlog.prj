@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../tb/verification" \
+"../../../../../src/custom_ram.v" \
+"../../../../../src/siso_decoder.v" \
+
+sv xil_defaultlib  --include "../../../../../tb/verification" \
+"../../../../../tb/verification/dut_if.sv" \
+"../../../../../tb/verification/tb_pckg.sv" \
+"../../../../../tb/verification/tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

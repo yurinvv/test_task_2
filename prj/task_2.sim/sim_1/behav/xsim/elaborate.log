@@ -1,0 +1,24 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto d02002830b30405a95bab8909a1f3783 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb.sv" Line 3. Module tb has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/prj/task_2.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.tb_pckg
+WARNING: [XSIM 43-3373] "../../../../../tb/verification/Scoreboard.svh" Line 36. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+WARNING: [XSIM 43-4294] "../../../../../tb/verification/Scoreboard.svh" Line 49. Incorrect format specifier for String type object "tmp_str". Ignoring the format specifier and printing in default type
+WARNING: [XSIM 43-4294] "../../../../../tb/verification/Scoreboard.svh" Line 56. Incorrect format specifier for String type object "tmp_str". Ignoring the format specifier and printing in default type
+WARNING: [XSIM 43-3373] "../../../../../tb/verification/BaseTest.svh" Line 18. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+Compiling package std.std
+Compiling module xil_defaultlib.dut_if
+Compiling module xil_defaultlib.custom_ram
+Compiling module xil_defaultlib.siso_decoder
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav

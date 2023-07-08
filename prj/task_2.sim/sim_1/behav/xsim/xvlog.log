@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/dut_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb_pckg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Yurin/Documents/Father/GitHub/fpga/test_tasks_kred/test_task_2/tb/verification/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
