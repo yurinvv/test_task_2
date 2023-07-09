@@ -46,14 +46,14 @@ class Scoreboard;
 					array.push_front(tmp_str.atoi());
 					start_index = i + 1;
 					j++;
-					$display("Scoreboard: %d) buf value = %d", j, tmp_str);
+					//$display("Scoreboard: %d) buf value = %d", j, tmp_str);
 				end
 			end
 			
 			tmp_str = line.substr(start_index, line.len() - 1);
 			array.push_front(tmp_str.atoi());
 			j++;
-			$display("Scoreboard: %d) buf value = %d", j, tmp_str);
+			//$display("Scoreboard: %d) buf value = %d", j, tmp_str);
 			
 		end else 
 			$display("Exception for Scoreboard: ref_path == null !!!");
@@ -91,7 +91,7 @@ class Scoreboard;
 		//$display("T=%0t Scoreboard is starting...", $time);
 		
 		loadPatterns(ref_llr_path, ref_llr_array);
-		//loadPatterns(ref_extrinsic_path, ref_extrinsic_array);
+		loadPatterns(ref_extrinsic_path, ref_extrinsic_array);
 		
 		//test
 		//readAndPrintAllBuf(ref_llr_path, ref_llr_array );

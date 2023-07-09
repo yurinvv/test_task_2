@@ -13,6 +13,7 @@ class BaseTest;
 		
 		int fd = $fopen(stimuli_path, "r");
 		string line;
+		int j = 0;
 	
 		while(!$feof(fd)) begin
 			$fgets(line, fd);
@@ -21,6 +22,9 @@ class BaseTest;
 				break;
 			
 			stimuli_array.push_front(line.atoi());
+			j++;
+			//$display("BaseTest: %d) stimul value = %d", j, line.atoi());
+			
 		end
 		$fclose(fd);
 		

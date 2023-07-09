@@ -14,7 +14,7 @@ Compiling package xil_defaultlib.tb_pckg
 WARNING: [XSIM 43-3373] "../../../../../tb/verification/Scoreboard.svh" Line 36. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
 WARNING: [XSIM 43-4294] "../../../../../tb/verification/Scoreboard.svh" Line 49. Incorrect format specifier for String type object "tmp_str". Ignoring the format specifier and printing in default type
 WARNING: [XSIM 43-4294] "../../../../../tb/verification/Scoreboard.svh" Line 56. Incorrect format specifier for String type object "tmp_str". Ignoring the format specifier and printing in default type
-WARNING: [XSIM 43-3373] "../../../../../tb/verification/BaseTest.svh" Line 18. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
+WARNING: [XSIM 43-3373] "../../../../../tb/verification/BaseTest.svh" Line 19. System function $fgets is used as system task. This system function should have a LHS e.g. x=$fgets().
 Compiling package std.std
 Compiling module xil_defaultlib.dut_if
 Compiling module xil_defaultlib.custom_ram
