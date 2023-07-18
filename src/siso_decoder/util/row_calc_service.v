@@ -11,11 +11,11 @@ module row_calc_service#(
 )(
 	input aclk,
 	input aresetn,
-	input signed [DWIDTH - 1 : 0]         i_row_item0,
-	input signed [DWIDTH - 1 : 0]         i_row_item1,
-	input signed [DWIDTH - 1 : 0]         i_branch_item0,
-	input signed [DWIDTH - 1 : 0]         i_branch_item1,
-	input signed [DWIDTH - 1 : 0]         i_norm_item,
+	input [DWIDTH - 1 : 0]         i_row_item0,
+	input [DWIDTH - 1 : 0]         i_row_item1,
+	input [DWIDTH - 1 : 0]         i_branch_item0,
+	input [DWIDTH - 1 : 0]         i_branch_item1,
+	input [DWIDTH - 1 : 0]         i_norm_item,
 	
 	input [$clog2(DEPTH_RAM) - 1 : 0]     i_addr,
 	input                                 i_valid,
@@ -29,7 +29,7 @@ module row_calc_service#(
 	/**
 	* ADDR & VALID & NORM conveyor
 	*/
-	localparam PIPE_LENGTH = 4;
+	localparam PIPE_LENGTH = 3;
 
 	reg [DWIDTH - 1 : 0]            norm_item_pp[PIPE_LENGTH - 1:0];
 	reg [$clog2(DEPTH_RAM) - 1 : 0] addr_pp [PIPE_LENGTH - 1:0];
@@ -54,7 +54,36 @@ module row_calc_service#(
 				norm_item_pp[i]  <= norm_item_pp[i-1];
 			end
 		end
-			
+
+/*
+	always@(posedge aclk)
+		if (!aresetn) begin
+			addr_pp[0]      <= 0;
+			valid_pp[0]     <= 0;
+			norm_item_pp[0] <= 0;
+			addr_pp[1]      <= 0;
+			valid_pp[1]     <= 0;
+			norm_item_pp[1] <= 0;
+			addr_pp[2]      <= 0;
+			valid_pp[2]     <= 0;
+			norm_item_pp[2] <= 0;
+			addr_pp[3]      <= 0;
+			valid_pp[3]     <= 0;
+			norm_item_pp[3] <= 0;
+		end else begin
+			addr_pp[0]  <= i_addr;
+			valid_pp[0] <= i_valid;
+			norm_item_pp[0] <= i_norm_item;
+			addr_pp[1]      <= addr_pp[0];
+			valid_pp[1]     <= valid_pp[0];
+			norm_item_pp[1] <= norm_item_pp[0];
+			addr_pp[2]      <= addr_pp[1] ;
+			valid_pp[2]     <= valid_pp[1];
+			norm_item_pp[2] <= norm_item_pp[1];
+			addr_pp[3]      <= addr_pp[2];   
+			valid_pp[3]     <= valid_pp[2] ;   
+			norm_item_pp[3] <= norm_item_pp[2];
+		end*/
 	
 	assign o_addr  = addr_pp[PIPE_LENGTH - 1];
 	assign o_valid = valid_pp[PIPE_LENGTH - 1];
@@ -90,6 +119,6 @@ module row_calc_service#(
 		if (!aresetn) begin
 			o_data <= 0;
 		end else begin
-			o_data <= max_result - norm_item_pp[PIPE_LENGTH - 1];
+			o_data <= max_result - norm_item_pp[PIPE_LENGTH - 2];
 		end
 endmodule
